@@ -23,10 +23,13 @@ button{font:inherit;padding:10px 20px;background:#12402a;color:#fff;border:0;cur
 .screen-only .screen-link{display:inline-flex;align-items:center;min-height:36px;margin:0 6px 8px 0;padding:7px 12px;border:1px solid #6d8a78;border-radius:4px;background:#f4f7f3;color:#12402a;font-weight:600;white-space:nowrap}
 .screen-only .screen-link:hover{background:#12402a;border-color:#12402a;color:#fff}
 .screen-only .screen-link:focus-visible{outline:3px solid #b48728;outline-offset:3px}
+.language-switcher{display:inline-flex;align-items:center;margin:0 0 12px 8px;font:13px/1.5 system-ui,sans-serif;color:#12402a}
+.language-switcher span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.language-switcher select{font:600 13px system-ui,sans-serif;color:#12402a;background:#fff;border:1px solid #6d8a78;border-radius:4px;padding:7px 8px;cursor:pointer}
 @media print{button{display:none}.screen-only{display:none}}
 </style></head><body>
 <button onclick="window.print()">Print this form</button>
-<p class="screen-only"><a class="screen-link" href="quote.html">Back to the online form</a><a class="screen-link" href="index.html">Home</a><br>This sheet is sized for A4. Print it, fill it in by hand, and bring it to the ranch or send us a photo on WhatsApp.</p>
+<p class="screen-only"><a class="screen-link" href="quote.html">Back to the online form</a><a class="screen-link" href="index.html">Home</a><label class="language-switcher" data-language-selector><span>Language</span><select aria-label="Language"><option value="en">English</option><option value="fr">Francais</option></select></label><br>This sheet is sized for A4. Print it, fill it in by hand, and bring it to the ranch or send us a photo on WhatsApp.</p>
 <main>
 <div class="top"><img src="images/logo-mark-120.png" width="109" height="120" alt=""><div><h1>The Golden Shield Ranch</h1><p>Expression of Interest form</p></div></div>
 <h2>Your details</h2>
@@ -39,4 +42,5 @@ button{font:inherit;padding:10px 20px;background:#12402a;color:#fff;border:0;cur
 <div class="box"><b>For ranch use:</b> Date received ____________ &nbsp; Quote given ____________ &nbsp; Follow-up ____________</div>
 <div class="foot">Call 024 346 8825 or 053 872 8899 &nbsp;|&nbsp; thegoldenshieldranch@gmail.com &nbsp;|&nbsp; Santasi, Kumasi &nbsp;|&nbsp; Registration No. BN118400826</div>
 </main>
+<script src="site.js"></script>
 </body></html>
