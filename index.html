@@ -26,6 +26,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<script>try{if(!sessionStorage.getItem("gsr-welcomed")&&!location.hash&&!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("splash-on")}catch(e){}</script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -57,6 +58,14 @@
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
+<div class="splash" id="splash" aria-hidden="true">
+<img src="images/logo-mark-120.png" width="109" height="120" alt="">
+<p class="word"><span style="--i:0">A</span><span style="--i:1">k</span><span style="--i:2">w</span><span style="--i:3">a</span><span style="--i:4">a</span><span style="--i:5">b</span><span style="--i:6">a</span></p>
+<i class="rule"></i>
+<p class="tag">Welcome to The Golden Shield Ranch</p>
+<div class="bar"></div>
+<button class="splash-skip" type="button" tabindex="-1">Skip intro</button>
+</div>
 <header><div class="wrap">
 <a class="brand" href="index.html"><img src="images/logo-mark-120.png" width="109" height="120" alt=""><span>The Golden Shield Ranch<small>LIVESTOCK FARMING</small></span></a>
 <button class="navtoggle" type="button" aria-expanded="false" aria-controls="mainnav" aria-label="Menu"><span></span><span></span><span></span></button>
@@ -155,5 +164,15 @@ WhatsApp</a>
 
 <script src="site.js"></script>
 <script src="updates.js"></script>
+<script>
+(function(){var s=document.getElementById("splash");if(!s)return;var html=document.documentElement,done=false,loaded=document.readyState==="complete",timeUp=false;
+function end(){if(done)return;done=true;s.classList.add("out");html.classList.remove("splash-on");try{sessionStorage.setItem("gsr-welcomed","1")}catch(e){}setTimeout(function(){if(s.parentNode)s.parentNode.removeChild(s)},650)}
+setTimeout(function(){timeUp=true;if(loaded)end()},2400);
+window.addEventListener("load",function(){loaded=true;if(timeUp)end()});
+setTimeout(end,4200);
+s.addEventListener("click",end);
+["keydown","wheel","touchstart"].forEach(function(t){window.addEventListener(t,end,{passive:true,once:true})});
+})();
+</script>
 </body>
 </html>
