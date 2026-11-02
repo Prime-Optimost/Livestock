@@ -74,7 +74,7 @@ if(p)document.getElementById("product").value=p;
 f.addEventListener("submit",function(e){
 e.preventDefault();var d=new FormData(f),s=e.submitter?e.submitter.value:"wa",sel=document.getElementById("product"),bad=[];
 [].forEach.call(f.querySelectorAll("[required]"),function(el){var ok=el.value.trim()!=="";el.setAttribute("aria-invalid",ok?"false":"true");if(!ok)bad.push(el)});
-if(bad.length){m.textContent="Please fill in the fields marked with a star.";bad[0].focus();return}
+if(bad.length){m.textContent=window.gsrLanguage&&window.gsrLanguage()==="fr"?"Veuillez remplir les champs marques d'une etoile.":"Please fill in the fields marked with a star.";bad[0].focus();return}
 m.textContent="";
 var t="Hello, I would like a quote from The Golden Shield Ranch.\n\nName: "+d.get("name")+"\nPhone: "+d.get("phone")+"\nLocation: "+d.get("place")+"\nProduct: "+sel.options[sel.selectedIndex].text+"\nQuantity: "+d.get("qty")+"\nNeeded by: "+d.get("when")+"\nNotes: "+d.get("notes");
 location.href=s==="mail"?"mailto:thegoldenshieldranch@gmail.com?subject="+encodeURIComponent("Quote request: "+sel.options[sel.selectedIndex].text)+"&body="+encodeURIComponent(t):"https://wa.me/233243468825?text="+encodeURIComponent(t);
