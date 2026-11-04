@@ -16,7 +16,7 @@ Replace it everywhere in one step:
 powershell -ExecutionPolicy Bypass -File ./set-domain.ps1 thegoldenshieldranch.com
 ```
 
-The script accepts a bare domain or a full `https://` origin, skips `.jury`, `node_modules` and `.git`, and leaves this file and the script itself unchanged. Run it once, then check:
+The script accepts a bare domain or a full `https://` origin, skips generated folders such as `.jury`, plus `node_modules` and `.git`, and leaves this file and the script itself unchanged. Run it once, then check:
 
 ```powershell
 Select-String -Path *.html,*.xml,*.txt,*.json -Pattern "your-domain.example"
@@ -26,7 +26,7 @@ That command should return nothing.
 
 ## Upload
 
-Upload the whole folder except `.jury` (audit evidence, not part of the site).
+Upload the whole folder. Audit evidence and screenshots are generated locally and excluded by `.gitignore`, so they are not part of the site.
 
 The site works on any static host. If the host supports redirects, include:
 
@@ -50,4 +50,4 @@ On a host that supports neither, either add the equivalent redirect in its dashb
 - `updates.html` is deliberately left out of `sitemap.xml` while it has no posts. Add it once the first update is published.
 - `eoi-sheet.html` and `404.html` are `noindex` and are not in the sitemap.
 - The hero uses AVIF, WebP and JPEG at 800, 1200 and 2000 pixels wide. Keep all nine files in `images/` when uploading.
-- `images/hero.jpg` is the original 2000-pixel source, kept for future edits. It is no longer loaded by the homepage.
+- `images/hero-2000.jpg` is the full-size 2000-pixel fallback and the source for future hero edits.

@@ -1,0 +1,8 @@
+# Audit output and screenshots are generated locally, not part of the site
+.jury/
+.shots/
+
+# OS and editor clutter
+.DS_Store
+Thumbs.db
+desktop.ini

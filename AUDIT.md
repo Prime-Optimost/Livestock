@@ -3,7 +3,7 @@
 **Date:** 2 November 2026  
 **Scope:** all 9 static pages (`index`, `products`, `order`, `about`, `updates`, `quote`, `downloads`, `eoi-sheet`, `404`) served locally at `http://127.0.0.1:4400`.  
 **Method:** full crawl and HTML/SEO audit, axe accessibility scan, Chromium at 1440 px and at 390 px with 4× CPU / slow 4G, keyboard and reduced-motion passes, hover-state inspection, quote-form end-to-end test, and source review.  
-**Evidence:** `.jury/127.0.0.1-4400/` (`audit.txt`, `shots/home/`, `shots/quote/`, `shots/404/`).
+**Evidence:** generated locally under `.jury/127.0.0.1-4400/` (`audit.txt`, `shots/home/`, `shots/quote/`, `shots/404/`); that generated folder is ignored by git and not shipped with the site.
 
 This is a measurement- and code-led audit. It does not include a screenshot-by-screenshot visual design critique; the visual design comments below are limited to what the rendered layout and CSS can establish.
 
