@@ -58,7 +58,7 @@ http://localhost:8000
 
 ## Deployment
 
-This project is configured for static deployment on Vercel. For deployment steps, environment details, and domain configuration, see [DEPLOY.md](DEPLOY.md).
+This is a static site with no build step. Upload the folder as-is (GitHub Pages, Vercel or any static host), then submit `https://thegoldenshieldranch.com/sitemap.xml` in Google Search Console.
 
 ## Notes
 
