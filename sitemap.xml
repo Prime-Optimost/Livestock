@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://your-domain.example/</loc>
+    <loc>https://thegoldenshieldranch.com/</loc>
     <lastmod>2026-11-02</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://your-domain.example/products.html</loc>
+    <loc>https://thegoldenshieldranch.com/products.html</loc>
     <lastmod>2026-11-02</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://your-domain.example/quote.html</loc>
+    <loc>https://thegoldenshieldranch.com/quote.html</loc>
     <lastmod>2026-11-02</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://your-domain.example/order.html</loc>
+    <loc>https://thegoldenshieldranch.com/order.html</loc>
     <lastmod>2026-11-02</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://your-domain.example/about.html</loc>
+    <loc>https://thegoldenshieldranch.com/about.html</loc>
     <lastmod>2026-11-02</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://your-domain.example/downloads.html</loc>
+    <loc>https://thegoldenshieldranch.com/downloads.html</loc>
     <lastmod>2026-11-02</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://your-domain.example/faq.html</loc>
+    <loc>https://thegoldenshieldranch.com/faq.html</loc>
     <lastmod>2026-11-02</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://your-domain.example/privacy.html</loc>
+    <loc>https://thegoldenshieldranch.com/privacy.html</loc>
     <lastmod>2026-11-02</lastmod>
     <priority>0.4</priority>
   </url>
