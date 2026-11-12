@@ -194,6 +194,7 @@
     "A black and white goat standing on grass": "Une chevre noire et blanche debout dans l'herbe",
     "A group of sheep resting together": "Un groupe de moutons se reposant ensemble",
     "A black and white horned goat on grass": "Une chevre noire et blanche a cornes dans l'herbe",
+    "Organic manure collected at the ranch": "Fumier organique recueilli au ranch",
     "What we sell": "Ce que nous vendons",
     "Sold live, by the animal": "Vendus vivants, a l'unite",
     "Weights and prices confirmed before you pay": "Poids et prix confirmes avant le paiement",
